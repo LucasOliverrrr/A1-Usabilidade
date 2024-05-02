@@ -11,3 +11,25 @@ html pode ser simples
 *CODIGOS DO CMD:*
 npm i express
 node index.js
+cls
+
+*arquitetura monolitica* - mono camada e tudo é executado em 1 camada só, 
+nao consigo mudar algo pois teria que derrubar o sistema todo para que alteraçõe possam ser feitas
+
+-melhor para aplicar em aplicações menores
+
+desvantagem: escabilidade limitada, bloqueio/flexibilidade de tecnologia
+vantagem: -desempenho, pois o que esta dentro da camada se comunica mais facil
+
+
+
+*micro serviçoes* - roda sozinha e independente, 
+e eu posso mudar o que eu quiser pois nao esta tudo dentro de uma camada/arquivo só, 
+se algo cai, o resto continua funcionando
+
+-consigo ter um micro serviço que vai trabalhar com banco de dados relacional
+-consigo ter linguagens diferentes
+
+-consigo que uma equipe trabalhe em um microserviço, e outra equipe em outro microserviço
+desvantagem: -facilidade de implantação (posso usar varias linguagens)
+vantagem: -escalavel, 
